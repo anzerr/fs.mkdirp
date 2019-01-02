@@ -5,6 +5,9 @@ const path = require('path'),
 const mkdirP = (dir, option) => {
 	let p = path.resolve(dir);
 	return fs.mkdir(p, {...option, recursive: true}).catch((error) => {
+		if (error.code === 'EEXIST') {
+			return true;
+		}
 		if (error.code === 'ENOENT') {
 			return mkdirP(path.dirname(p), option).then(() => {
 				return fs.mkdir(p, {...option, recursive: true});
