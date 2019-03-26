@@ -4,7 +4,7 @@ mkdir with 'p' on the base mkdir '{recursive: true}' doesn't seem to work so her
 
 #### `Install`
 ``` bash
-npm install --save git+ssh://git@github.com/anzerr/fs.mkdirp.git
+npm install --save git+http://git@github.com/anzerr/fs.mkdirp.git
 ```
 
 ### `Example`
