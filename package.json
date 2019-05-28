@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/anzerr/fs.mkdirp.git"
+		"url": "git@github.com:anzerr/fs.mkdirp.git"
 	},
 	"license": "MIT",
 	"author": "anzerr",
@@ -21,7 +21,7 @@
 		"extends": "eslint-config-basic"
 	},
 	"devDependencies": {
-		"eslint": "^5.11.1",
+		"eslint": "5.11.1",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
