@@ -13,5 +13,4 @@ npm install --save @anzerr/fs.mkdirp
 const mkdir = require('fs.mkdirp');
 
 mkdir('foo/bar/cat/dog').catch(console.log);
-
 ```
