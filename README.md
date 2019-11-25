@@ -1,5 +1,9 @@
 
 ### `Intro`
+![GitHub Actions status | linter](https://github.com/anzerr/fs.mkdirp/workflows/linter/badge.svg)
+![GitHub Actions status | publish](https://github.com/anzerr/fs.mkdirp/workflows/publish/badge.svg)
+![GitHub Actions status | test](https://github.com/anzerr/fs.mkdirp/workflows/test/badge.svg)
+
 mkdir with 'p' on the base mkdir '{recursive: true}' doesn't seem to work so here's this little util
 
 #### `Install`

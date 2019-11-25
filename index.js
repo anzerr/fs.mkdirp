@@ -2,14 +2,14 @@
 const path = require('path'),
 	fs = require('fs.promisify');
 
-const mkdirP = (dir, option) => {
+const mkdir = (dir, option) => {
 	let p = path.resolve(dir);
 	return fs.mkdir(p, {...option, recursive: true}).catch((error) => {
 		if (error.code === 'EEXIST') {
 			return true;
 		}
 		if (error.code === 'ENOENT') {
-			return mkdirP(path.dirname(p), option).then(() => {
+			return mkdir(path.dirname(p), option).then(() => {
 				return fs.mkdir(p, {...option, recursive: true});
 			});
 		}
@@ -21,4 +21,5 @@ const mkdirP = (dir, option) => {
 	});
 };
 
-module.exports = mkdirP;
+module.exports = mkdir;
+module.exports.default = mkdir;
