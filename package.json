@@ -24,6 +24,9 @@
 	"devDependencies": {
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
+	"dependencies": {
+		"fs.promisify": "git+https://git@github.com/anzerr/fs.promisify.git"
+	},
 	"engines": {
 		"node": ">= 0.10.0"
 	}
