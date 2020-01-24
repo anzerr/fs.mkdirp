@@ -1,7 +1,13 @@
 {
 	"name": "fs.mkdirp",
 	"version": "1.0.9",
-	"keywords": [],
+	"description": "mkdir with 'p'",
+	"keywords": [
+		"fs",
+		"mkdir",
+		"nodejs",
+		"util"
+	],
 	"homepage": "https://github.com/anzerr/fs.mkdirp#readme",
 	"bugs": {
 		"url": "https://github.com/anzerr/fs.mkdirp/issues"
@@ -21,11 +27,11 @@
 	"eslintConfig": {
 		"extends": "eslint-config-basic"
 	},
-	"devDependencies": {
-		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
-	},
 	"dependencies": {
 		"fs.promisify": "git+https://git@github.com/anzerr/fs.promisify.git"
+	},
+	"devDependencies": {
+		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
 		"node": ">= 0.10.0"
